@@ -1,4 +1,4 @@
-    @extends('layouts.main')
+    @extends('layouts.app')
     @section('content')
     <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container">

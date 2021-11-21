@@ -13,7 +13,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-
 Route::get('/', function () {
     return view('welcome');
 });
@@ -25,4 +24,9 @@ Route::get('/checkout', function () {
 })->name('checkout');
 Route::get('/checkout-success', function () {
     return view('success-checkout');
-})->name('success-chk');
+})->name('success-checkout');
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->middleware(['auth'])->name('dashboard');
+
+require __DIR__.'/auth.php';
