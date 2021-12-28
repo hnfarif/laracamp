@@ -59,8 +59,8 @@
                         <h3 class="title">
                             Diversity
                         </h3>
+                        Learn from anyone around the <br> world and get a new skills
                         <p class="support">
-                            Learn from anyone around the <br> world and get a new skills
                         </p>
                     </div>
                 </div>
@@ -105,7 +105,7 @@
         <div class="container">
             <div class="row item-step pb-70">
                 <div class="col-lg-6 col-12 text-center">
-                    <img src="{{ asset('/images/ic_globe-2.png') }}" class="cover" alt="">
+                    <img src="{{ asset('/images/step1.png') }}" class="cover" alt="">
                 </div>
                 <div class="col-lg-6 col-12 text-left copywriting">
                     <p class="story">
@@ -266,7 +266,8 @@
                                     <div class="clear"></div>
                                 </div>
                                 <p>
-                                    <a href="#" class="btn btn-master btn-primary w-100 mt-3">
+                                    <a href="{{ route('checkout', 'gila-belajar') }}"
+                                        class="btn btn-master btn-primary w-100 mt-3">
                                         Take This Plan
                                     </a>
                                 </p>
@@ -312,7 +313,8 @@
                                     <div class="clear"></div>
                                 </div>
                                 <p>
-                                    <a href="#" class="btn btn-master btn-secondary w-100 mt-3">
+                                    <a href="{{ route('checkout', 'baru-mulai') }}"
+                                        class="btn btn-master btn-secondary w-100 mt-3">
                                         Start With This Plan
                                     </a>
                                 </p>

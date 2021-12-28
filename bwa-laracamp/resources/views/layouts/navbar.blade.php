@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg bg-white fixed-top">
-    <div class="container">
+    <div class="container ">
         <a class="navbar-brand" href="#">
             <img src="{{ asset('/images/logo.png') }}" alt="">
         </a>
@@ -28,7 +28,7 @@
                     Halo, {{ auth()->user()->name }}!
                     <img src="{{ auth()->user()->avatar }}" class="user-photo rounded-circle" alt="">
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink" style="right: 0; left: auto">
-                        <li><a href="#" class="dropdown-item">My Dashboard</a></li>
+                        <li><a href="{{ route('dashboard') }}" class="dropdown-item">My Dashboard</a></li>
                         <li>
                             <a href="#" class="dropdown-item"
                                 onclick="event.preventDefault(); document.getElementById('logout-form').submit()">Sign
