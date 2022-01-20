@@ -36,6 +36,8 @@ Route::middleware(['auth'])->group(function (){
     //user dashboard
     Route::get('/dashboard', [HomeController::class, 'dashboard'])->middleware(['auth'])->name('dashboard');
 
+    Route::get('dashboard/checkout/invoice/{checkout}', [CheckoutController::class, 'invoice'])->name('user.checkout.invoice');
+
 });
 
 require __DIR__.'/auth.php';
