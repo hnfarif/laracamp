@@ -23,6 +23,7 @@ class Checkout extends Model
      *
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
      */
+
     public function Camp(): BelongsTo
     {
         return $this->belongsTo(Camp::class);
