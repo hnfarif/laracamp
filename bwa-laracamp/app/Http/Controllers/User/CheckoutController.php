@@ -11,6 +11,7 @@ use Illuminate\Support\Facades\Auth;
 use Mail;
 use App\Mail\Checkout\AfterCheckout;
 
+
 class CheckoutController extends Controller
 {
     /**
